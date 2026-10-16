@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="hi">
 <head>
 
 <!-- Meta Pixel Code -->
@@ -13,316 +12,243 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1625180832665055');
+fbq('init', '1147233794541276');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1625180832665055&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1147233794541276&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
   
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Telegram Channel</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐓𝐫𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 𝐆𝐚𝐮𝐭𝐚𝐦 𝐉𝐡𝐚</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 15px;
     }
-    .elementor img {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    height: auto;
-    max-width: 100%;
-    border-radius: 90px;
-}
-    .card {
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 1rem;
-      padding: 2rem;
+
+    /* Main Neon Card Container */
+    .card-container {
+      width: 100%;
       max-width: 400px;
-      width: 100%;
+      background-color: #050b14;
+      border: 1.5px solid #00a2ff;
+      border-radius: 28px;
+      padding: 30px 20px 20px;
       text-align: center;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0, 162, 255, 0.2);
     }
-    .btn-telegram {
+
+    /* Profile Image with Cyan Glow */
+    .profile-wrapper {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00d2ff;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    }
+
+    /* Title */
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    /* List Items */
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .feature-item {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.75rem;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(90deg, #0088cc, #00bcd4);
-      transition: 0.3s;
+      gap: 12px;
+      padding: 14px 10px;
+      font-size: 14px;
+      color: #e0e6ed;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .feature-item:last-child {
+      border-bottom: none;
+    }
+
+    .icon {
+      font-size: 18px;
+    }
+
+    /* Subtitle Text */
+    .subtext {
+      font-size: 13px;
+      color: #a0aec0;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    /* Gradient Join Button */
+    .btn-telegram {
+      display: block;
       width: 100%;
+      padding: 16px;
+      background: linear-gradient(90deg, #00c6ff 0%, #a100ff 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      border-radius: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
     }
-    .btn-telegram:hover {
-      background: linear-gradient(90deg, #00bcd4, #0088cc);
-      transform: translateY(-2px);
+
+    .btn-telegram:active {
+      transform: scale(0.98);
     }
-    .feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      font-size: 0.95rem;
+
+    /* Hindi Quote */
+    .quote-text {
+      font-size: 14px;
+      color: #cbd5e0;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    /* Agency Badge (Clickable Link) */
+    .agency-badge {
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.02);
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 12px;
+      color: #a0aec0;
+      margin-bottom: 20px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .agency-badge:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: rgba(0, 162, 255, 0.4);
+    }
+
+    .agency-badge span {
+      color: #00a2ff;
+      font-weight: 700;
+    }
+
+    /* Disclaimer Links & Text */
+    .footer-links {
+      font-size: 11px;
+      color: #718096;
+      margin-bottom: 6px;
+    }
+
+    .footer-links a {
+      color: #718096;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .disclaimer {
+      font-size: 10px;
+      color: #4a5568;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
+  <div class="card-container">
+    
     <!-- Profile Image -->
-    <div class="w-32 h-32 mx-auto mb-4 ">
-      <img src="https://telegram-ads.riyazshaikh.com/wp-content/uploads/2025/06/IMG-20250627-WA0004.jpg" alt="Profile" class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white rounded-xxl">
+    <div class="profile-wrapper">
+      <img src="https://i.ibb.co/WW55Ncvh/Y75-N-z-LT4z-Pc-W0jxoj-Achihtl-LAMBzv-Hzg-O5u-BRAi-FBoqw-Lkgh-A9g4-KRBsma-FNKc-HCO2-WHcuwl62-NVoh-ELk-N.jpg" alt="Trade With Gautam Jha" class="profile-img">
     </div>
 
-    <!-- Heading -->
-    <h1 class="text-xl font-extrabold text-gray-800 mb-1">
-BADSHAH BROKING OFFICIAL 💸🏆
-    </h1>
+    <!-- Title -->
+    <h1 class="title">𝐓𝐫𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 𝐆𝐚𝐮𝐭𝐚𝐦 𝐉𝐡𝐚</h1>
 
-    <!-- Experience -->
-    <p class="text-red-600 font-semibold mb-4">📊 7 years experience 📊</p>
+    <!-- Features List -->
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="icon">🌐</span>
+        <span>Learning & Educational Sessions</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">📊</span>
+        <span>Market Concepts & Awareness</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">💎</span>
+        <span>Chart Reading Concepts</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">💻</span>
+        <span>Educational Case Discussions</span>
+      </div>
+    </div>
 
-    <!-- CTA Button -->
-    <a href="https://t.me/+6ZbiYl1cXuQ2YjI1" target="_blank" class="btn-telegram mb-6">
+    <!-- Subtitle -->
+    <p class="subtext">
+      Join our learning community and grow your knowledge
+    </p>
 
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M16 8a8 8 0 1 1-16 0 8 8 0 0 1 16 0zM6.79 10.89l-.27 3.67c.39 0 .56-.17.77-.38l1.85-1.76 3.84 2.8c.7.39 1.19.19 1.36-.65l2.47-11.59c.22-.98-.35-1.37-1.05-1.14L1.13 6.24c-.95.37-.93.9-.17 1.14l3.57 1.11 8.3-5.23c.39-.26.74-.12.45.14L6.79 10.89z"/>
-      </svg>
-      JOIN TELEGRAM 💬
+    <!-- Join Button -->
+    <a href="https://t.me/+JLLhPoOszdpiMjY1" class="btn-telegram">
+      JOIN TELEGRAM
     </a>
 
-    <!-- Features -->
-    <p class="text-red-600 font-bold mb-4">💎 DAILY PROFIT GURANTEE 💎</p>
-    <div class="text-left space-y-3 text-gray-800 mb-6">
-      <div class="feature">📊 <span><b>Live Daily Trades</b> – From my portfolio to yours!</span></div>
-      <div class="feature">🔥 <span><b>Exclusive Signals</b> – Get the same trades I take!</span></div>
-      <div class="feature">💯 <span><b>High Accuracy</b> – Consistent proven strategy!</span></div>
-      <div class="feature">💡 <span><b>Real-Time Updates</b> – Instant market alerts!</span></div>
+    <!-- Hindi Quote -->
+    <p class="quote-text">
+      नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
+    </p>
+
+
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#" target="_blank">Terms | Privacy | Disclaimer</a>
     </div>
 
-    <!-- Hindi Section -->
-    <h2 class="text-lg font-bold text-gray-800 mb-2">क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं?</h2>
-    <p class="text-red-600 font-semibold">
-      अगर हां तो दिए गए टेलीग्राम बटन पर दबाएं !
-    </p>
-  </div>
+    <!-- Facebook Disclaimer -->
+    <div class="disclaimer">
+      This site is not part of Facebook™ or endorsed by Facebook™
+    </div>
 
+  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
